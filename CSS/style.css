@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Baloo+Bhaijaan+2:wght@400;500;600&family=Comfortaa:wght@500;700&family=Dongle:wght@300;400;700&family=Fredoka+One&family=Noto+Sans:ital,wght@1,700&family=Pacifico&family=Poppins:wght@400;500;600;700&family=Rowdies:wght@300;400;700&family=Secular+One&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Secular One', sans-serif;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: 0.1s linear;
+}
+
+*::selection {
+    background: var(--pink);
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #0A141E;
+    height: 100vh;
+    overflow: hidden;
+    /* background-color: #FFCD50; */
+}
+
+
+/* bosh{
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+} */
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-container {
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-container .text-box {
+    width: 30rem;
+    position: absolute;
+    top: 15%;
+    right: 0%;
+    padding: 3rem;
+    border: 2px dotted #6EFF88;
+    border-radius: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-container .text-box h1 {
+    color: #fff;
+}
+
+.left-container .image {
+    position: absolute;
+    bottom: 0;
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(3rem);
+    }
+    50% {
+        transform: translateY(0rem);
+    }
+}
+
+.left-container .image img {
+    animation: float 5s linear infinite;
+}
+
+.left-container .name h1 {
+    position: absolute;
+    left: 2rem;
+    top: 1rem;
+    font-size: 6rem;
+    line-height: 6rem;
+    color: #72FF92;
+    list-style: none;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, .7), 0 0 40px rgba(255, 255, 255, .7), 0 0 100px rgba(255, 255, 255, .7);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.left-container .name h1:nth-child(2) {
+    top: 7rem;
+    background: -webkit-linear-gradient(#9CBDF0, #6EFF88);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px rgba(114, 255, 146, .7), 0 0 40px rgba(114, 255, 146, .7), 0 0 100px rgba(114, 255, 146, .7);
+}
+
+.left-container .name h1 ion-icon {
+    font-size: 2.5rem;
+    color: #6EFF88;
+    box-shadow: 0 0 10px rgba(114, 255, 146, .7), 0 0 40px rgba(114, 255, 146, .7), 0 0 100px rgba(114, 255, 146, .7);
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.left-container .name h1 ion-icon:hover {
+    transform: rotate(20deg);
+}
+
+@keyframes zoom-in-out {
+    0% {
+        transform: scale(1.05);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes zoom-in-out2 {
+    0% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.left-container .name h1 ion-icon:nth-child(1) {
+    animation: zoom-in-out2 2s linear infinite;
+    animation-delay: 1s;
+}
+
+.left-container .name h1 ion-icon:nth-child(2) {
+    animation: zoom-in-out2 2s linear infinite;
+    animation-delay: 2s;
+}
+
+.left-container .name h1 ion-icon:nth-child(3) {
+    animation: zoom-in-out2 2s linear infinite;
+    animation-delay: 3s;
+}
+
+.left-container .name h1 ion-icon:nth-child(4) {
+    animation: zoom-in-out2 2s linear infinite;
+    animation-delay: 4s;
+}
+
+.left-container>.circle {
+    position: absolute;
+    width: 70rem;
+    height: 70rem;
+    border-radius: 50%;
+    bottom: -40%;
+    left: -10%;
+    border: 2px solid #6EFF88;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: zoom-in-out 2s linear infinite;
+}
+
+.left-container>.circle>.circle-child {
+    width: 60rem;
+    height: 60rem;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #9CBDF0, #6EFF88);
+}
+
+.right-container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.right-container form {
+    width: 80%;
+    background-image: linear-gradient(45deg, #9CBDF0, #6EFF88);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 0 10px rgba(114, 255, 146, .2), 0 0 40px rgba(114, 255, 146, .2), 0 0 100px rgba(114, 255, 146, .2);
+    animation: float 7s linear infinite;
+}
+
+.right-container form h1 {
+    color: #fff;
+}
+
+.right-container form input {
+    width: 90%;
+    height: 4rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: 2px solid #fff;
+    border-radius: 1.2rem;
+    background-color: transparent;
+    color: #fff;
+}
+
+.right-container form input::placeholder {
+    color: #fff;
+}
+
+.right-container .circle {
+    position: absolute;
+    z-index: -1;
+    width: 60rem;
+    height: 60rem;
+    border-radius: 50%;
+    top: -40%;
+    right: -10%;
+    background-image: linear-gradient(45deg, #9CBDF0, #6EFF88);
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(-4rem) scale(0);
+        opacity: 0;
+    }
+}
+
+.right-container .wheather-card {
+    width: 100%;
+    background-image: linear-gradient(45deg, #9CBDF0, #6EFF88);
+    padding: 2rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 0 10px rgba(114, 255, 146, .2), 0 0 40px rgba(114, 255, 146, .2), 0 0 100px rgba(114, 255, 146, .2);
+    animation: fadeIn 0.4s cubic-bezier(.54, 1.3, .63, 1.34) .2s backwards;
+}
+
+.wheather-card .image {
+    width: 100%;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    padding: 1.5rem;
+    border: 2px dotted #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wheather-card img:hover {
+    transform: scale(1.1);
+}
+
+.wheather-card img {
+    width: 100%;
+    height: 22rem;
+    object-fit: cover;
+    border-radius: 1.2rem;
+    cursor: pointer;
+}
+
+.wheather-card .left {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+    border: 2px dotted #fff;
+}
+
+.wheather-card .btn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 2rem;
+    border-radius: 1.2rem;
+    background-image: linear-gradient(90deg, #5E74C7, #B4FFFF);
+    cursor: pointer;
+}
+
+.wheather-card .btn .icon {
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wheather-card .btn ion-icon,
+.wheather-card .btn i {
+    font-size: 2rem;
+    color: #6E8BE6;
+}
+
+.wheather-card .btn .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.wheather-card .btn span:nth-child(1) {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.wheather-card .btn span:nth-child(2) {
+    font-size: 1.6rem;
+    color: #0A141E;
+    font-style: italic;
+}
+
+.wheather-card .btn:hover {
+    transform: translateX(1.5rem);
+}
+
+.wheather-card .details-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.wheather-card .right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+    border: 2px dotted #fff;
+    background-color: transparent;
+}
+
+.wheather-card .right .image {
+    border: none;
+    width: 100%;
+    padding: 1rem;
+}
+
+.wheather-card .right .image img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.wheather-card .right .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wheather-card .right .text span {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.wheather-card .right .text span:nth-child(2),
+.wheather-card .right .text span:nth-child(4) {
+    font-size: 1.6rem;
+    color: #0A141E;
+    font-style: italic;
+}
+
+.container>.circle {
+    width: 100rem;
+    height: 100rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -90%;
+    right: -15%;
+    border: 2px solid #9CBDF0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: zoom-in-out 4s linear infinite;
+}
+
+.container>.circle>.circle-child {
+    width: 70rem;
+    height: 70rem;
+    border-radius: 50%;
+    border: 2px solid #9CBDF0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .circle-child2 {
+    width: 40rem;
+    height: 40rem;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #9CBDF0, #6EFF88);
+}
+
+.right-container .wheather-card-error {
+    width: 100%;
+    background-image: linear-gradient(45deg, #9CBDF0, #6EFF88);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 0 10px rgba(114, 255, 146, .2), 0 0 40px rgba(114, 255, 146, .2), 0 0 100px rgba(114, 255, 146, .2);
+    animation: fadeIn 0.4s cubic-bezier(.54, 1.3, .63, 1.34) .2s backwards;
+    text-align: center;
+}
+
+.right-container .wheather-card-error {
+    display: flex;
+    align-items: center;
+}
+
+.right-container .wheather-card-error h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.right-container .wheather-card-error .image {
+    height: 25rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-container .wheather-card-error .text {
+    border: 2px dotted #fff;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 1.2rem;
+}
+
+.right-container .wheather-card-error img {
+    height: 100%;
+}
+
+.container .back-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    cursor: pointer;
+    background-image: linear-gradient(45deg, #9CBDF0, #6EFF88);
+    animation: fadeIn 0.4s cubic-bezier(.54, 1.3, .63, 1.34) .2s backwards;
+}
+
+.container .back-button:hover {
+    transform: translate(-50%, -50%) scale(0.85);
+}
+
+.container .back-button ion-icon {
+    color: #fff;
+    font-size: 4rem;
+    pointer-events: none;
+}
+
+.right-container .wheather-result {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}

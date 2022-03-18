@@ -5,7 +5,7 @@
 >`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIkey}`
 
 ## Get Image
-- Ex: https://api.github.com/users/PrimeRogue/repos?sort=created
+- Ex: https://source.unsplash.com/1600x900/?hanoi
 >`https://source.unsplash.com/1600x900/?${data.name}`
 
 ## Demo
